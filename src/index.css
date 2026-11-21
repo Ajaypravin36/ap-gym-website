@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color-scheme: dark;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Bebas Neue', 'Oswald', sans-serif;
+    letter-spacing: 0.04em;
+  }
+
+  .font-subheading {
+    font-family: 'Oswald', 'Inter', sans-serif;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0B0B;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E63946;
+}
+
+/* Smooth Image Loading */
+img {
+  content-visibility: auto;
+}
+
+/* Glow effects */
+.glow-on-hover:hover {
+  box-shadow: 0 0 25px rgba(230, 57, 70, 0.6);
+}
+
+.text-stroke-red {
+  -webkit-text-stroke: 1px #E63946;
+  color: transparent;
+}
